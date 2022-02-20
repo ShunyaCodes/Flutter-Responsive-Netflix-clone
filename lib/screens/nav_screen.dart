@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:netflix_ui_clone/cubits/cubits.dart';
-import 'package:netflix_ui_clone/data/data.dart';
+import 'package:netflix_ui_clone/screens/screens.dart';
 import 'package:netflix_ui_clone/widgets/widgets.dart';
 
 class NavScreen extends StatefulWidget {
@@ -11,11 +11,11 @@ class NavScreen extends StatefulWidget {
 
 class _NavScreenState extends State<NavScreen> {
   final List<Widget> _screens = [
-    HomeScreen(key: const PageStorageKey('homeScreen')),
-    const Scaffold(),
-    const Scaffold(),
-    const Scaffold(),
-    const Scaffold(),
+    HomeScreen(key: PageStorageKey('homeScreen')),
+    Scaffold(),
+    Scaffold(),
+    Scaffold(),
+    Scaffold(),
   ];
 
   final Map<String, IconData> _icons = const {
@@ -44,7 +44,7 @@ class _NavScreenState extends State<NavScreen> {
                       title,
                       BottomNavigationBarItem(
                         icon: Icon(icon, size: 30.0),
-                        title: Text(title),
+                        label: title,
                       )))
                   .values
                   .toList(),
