@@ -1,5 +1,8 @@
 # Netflix UI Clone
 
+### How to Run:
+To run the project, first run command ` flutter clean ` and then ` flutter pub get ` to avoid errors.\
+Then run the project using ` flutter run ` or build app using ` flutter build apk ` command.
 
 ⚡️A Netflix UI implemented with Flutter and BLoC architecture.
 ### Screenshots:
